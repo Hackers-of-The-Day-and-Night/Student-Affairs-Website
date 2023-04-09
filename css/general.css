@@ -1,0 +1,16 @@
+:root {
+  --background-color-darker: #1a120b;
+  --background-color-lighter: #3c2a21;
+  --color-darker: #d5cea3;
+  --color-lighter: #e5e5cb;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
