@@ -1,0 +1,29 @@
+@import url(general.css);
+
+.projects {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.projects .name {
+  text-decoration: none;
+  font-size: 1.3rem;
+  background-color: var(--background-color-lighter);
+  color: var(--color-lighter);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--background-color-darker);
+  width: 50%;
+  height: 50%;
+}
+
+.projects .name:hover {
+  background-color: var(--background-color-darker);
+  color: var(--color-darker);
+  transition-duration: 130ms;
+}
