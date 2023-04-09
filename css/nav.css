@@ -1,38 +1,45 @@
+@import url(general.css);
+
 nav {
-    background-color: #3C2A21;
-    text-align: center;
-    box-shadow: 0px 1px 5px 1px #777;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color-lighter);
+  text-align: center;
+  box-shadow: 0px 1px 5px 1px #777;
 }
 
 nav ul {
-    width: 50%;
-    margin: auto;
-    height: 50px;
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul li {
-    color: #e5e5cb;
-    width: 25%;
-    height: 100%;
+  color: var(--color-lighter);
+  width: 25%;
+  height: 100%;
 }
 
 nav ul li:hover {
-    color: #fff;
-    transition-duration: 130ms;
-    background-color: #1a120b;
-    border-bottom: 2px solid #fff;
+  color: var(--color-darker);
+  transition-duration: 130ms;
+  background-color: var(--background-color-darker);
+  border-bottom: 2px solid var(--color-darker);
 }
 
 nav ul li a {
-    color: inherit;
-    display: inline-flex;
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
+  color: inherit;
+  display: inline-flex;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
