@@ -1,0 +1,17 @@
+@import url(general.css);
+@import url(nav.css);
+
+h1 {
+    background-color: var(--background-color-lighter);
+    color: var(--color-lighter);
+}
+
+#table_div{
+    background-color: var(r);
+    color: var(--background-color-lighter);
+}
+
+input.input_search{
+    background-color: var(--color-lighter);
+
+}

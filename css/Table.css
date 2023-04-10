@@ -1,0 +1,21 @@
+@import url(general.css);
+@import url(nav.css);
+thead{
+    font-size: large;
+    font-weight: bold;
+}
+
+
+
+td.edit {
+    text-align : center;
+  
+  }
+td.radio_buton{
+    text-align : left;
+  }
+  table {
+    border: 1px solid black;
+    width: 1000px;
+    background-color: white;
+  }
