@@ -1,0 +1,104 @@
+@import url(general.css);
+@import url(nav.css);
+
+h1 {
+    text-align: center;
+}
+
+.form1 {
+    width: 500px;
+    height: 200px;
+    background-color: var(--background-color-darker);
+    color: white;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 35%;
+    top: 20%; 
+    padding: 10px;
+    align-content: center;
+    overflow: hidden;
+}
+
+.form1 span {
+    position: absolute;
+    left: 33%;
+}
+
+.form1 .submit-button .submit {
+    position: absolute;
+    left: 37%;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.form2 {
+    width: 500px;
+    height: 420px;
+    background-color: var(--background-color-darker);
+    color: white;
+    margin: 20px auto;
+    border: 2px solid gray;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    position: absolute;
+    left: 35%;
+    top: 20%; 
+    align-content: center;
+    /* overflow: hidden; */
+}
+
+.form2 .input {
+    position: absolute;
+    left: 35%;
+    border-radius: 5px;
+    
+}
+
+.form2 .submit {
+    display: inline-block;
+}
+
+.form2 #male {
+    position: absolute;
+    left: 175px;
+}
+
+.form2 #female {
+    position: absolute;
+    left: 250px;
+}
+
+.form2 .male-label {
+    position: absolute;
+    left: 200px;
+}
+
+.form2 .female-label {
+    position: absolute;
+    left: 275px;
+}
+
+
+
+.form2 .buttons-div .save-botton .submit {
+    position: absolute;
+    left: 25%;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.form2 .buttons-div .delete-botton .submit {
+    position: absolute;
+    left: 55%;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
