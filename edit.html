@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Edit user data</title>
+  <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+  <nav></nav>
+  <h1>Edit/Delete Page</h1>
+  <form action="" method="post">
+    <div class="name-div">
+      <label for="name">Name</label>
+      <input id="name" type="text" value="name" readonly>
+    </div>
+    <hr>
+    <div class="email-div">
+      <label for="email">Email</label>
+      <input id="email" type="email" value="old_email@gmail.com">
+    </div>
+    <hr>
+    <div class="gpa-div">
+      <label for="gpa">GPA</label>
+      <input id="gpa" type="number" value="0.0" readonly>
+    </div>
+    <hr>
+    <div class="level-div">
+      <label for="level">Level</label>
+      <input id="level" type="number" value="1" readonly>
+    </div>
+    <hr>
+    <div class="status-div">
+      <label for ="Status">Status</label>
+      <input id="Status" type="text" value="active" readonly>
+    </div>
+    <hr>
+    <div class="department-div">
+      <label for="department">Department</label>
+      <input id="department" type="text" value="No department yet" readonly>
+    </div>
+    <hr>
+    <div class="date-of-birth-div">
+      <label for="date-of-birth">Date of Birth</label>
+      <input id="date-of-birth" type="Date" required>
+    </div>
+    <hr>
+    <div class="gender-div">
+      <label>Gender</label>
+      <input id="male" type="radio" value="male" name="gender" required>
+      <label for="male">Male</label>
+      <input id="female" type="radio" value="female" name="gender" required>
+      <label for="female">Female</label>
+    </div>
+    <hr>
+    <div class="phone-div">
+      <label for="phone">phone</label>
+      <input id="phone" type="tel" value="01125443179" required>
+    </div>
+    <hr>
+    <div class="buttons-div">
+      <div class="save-botton">
+        <input type="submit" value="save">
+        <!--
+          missing popup 
+        -->
+      </div>
+      <div class="delete-botton">
+        <input type="button" value="delete student">
+        <!--
+          missing popup 
+        -->
+      </div>
+    </div>
+  </form>
+  <script src="js/nav.js"></script>
+</body>
+</html>

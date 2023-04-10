@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="This Is Assigning Department Page In Student Affairs Website">
+  <title>Assign Department Page</title>
+  <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+  <nav></nav>
+  <h1>Assign Department</h1>
+  <form method="post">
+    <div>
+      <label for="department-id">Student ID : </label>
+      <span>20211122</span>
+    </div>
+    <div>
+      <label for="department-kind">Choose Department</label>
+      <select id="departments" autofocus>
+        <option value="dep1" selected>General</option>
+        <option value="dep2">Information Science [IS]</option>
+        <option value="dep3">Computer Science [CS]</option>
+        <option value="dep4">Information Technology [IT]</option>
+        <option value="dep5">Desicion Support [DS]</option>
+        <option value="dep6">Cyber Security [CS]</option>
+        <option value="dep7">Data Science [DS]</option>
+        <option value="dep8">Artificial Intelligence [AI]</option>
+        </select>
+    </div>
+    <div>
+      <input type="submit" value="Save">
+    </div>
+    <div hidden>Are You Sure To Choose This Department ?</div>
+    <div hidden>
+      <input type="submit" value="Yes">
+      <input type="submit" value="No">
+    </div>
+    <div hidden>The Department Assignment Has Not Open For You Yet !</div>
+  </form>
+  <script src="js/nav.js"></script>
+</body>
+</html>
