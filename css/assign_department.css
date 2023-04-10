@@ -1,0 +1,15 @@
+@import url(general.css);
+@import url(nav.css);
+@import url(form.css);
+
+h1{
+    text-align: center;
+    color: var(--color-lighter);
+    background-color: var(--background-color-lighter);
+}
+
+span {
+    position: absolute;
+    left: 33%;
+    color: var(--color-lighter);
+}
