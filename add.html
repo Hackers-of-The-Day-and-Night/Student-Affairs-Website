@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Add Page</title>
+  <link rel="stylesheet" href="css/add.css">
+  <script defer src="js/add.js"></script>
+</head>
+<body>
+  <nav></nav>
+  <h1>Add Page</h1>
+  <form id="form">
+    <div class="name-div">
+      <label for="name">Name</label>
+      <input class="name" id ="name" type="text" placeholder="Enter your name" >
+    </div>
+    <hr>
+
+    <div class="id-div">
+      <label for="id">Id</label>
+      <input class="id" id = "id" type="text" placeholder="xxxxxxxx" >
+    </div>
+    <hr>
+
+    <div class="email-div">
+      <label for="email">Email</label>
+      <input class="email" type="email"  placeholder="Enter your email" required>
+    </div>
+    <hr>
+    </div>
+    <hr>
+
+    <div class="date-of-birth-div">
+      <label for="date-of-birth">Date of Birth</label>
+      <input class="date-of-birth" type="Date" required>
+    </div>
+    <hr>
+
+    <div class="gender-div">
+      <span class="gender-span">Gender</span>
+      <input class="male" type="radio" id="male" value="male" name="gender" required>
+      <label for="male">Male</label>
+      <input class="female" type="radio"  id ="female" value="female" name="gender" required>
+      <label for="female">Female</label>
+    </div>
+    <hr>
+
+    <div class="phone-div">
+      <label for="phone">phone</label>
+      <input class="phone" id = "phone" type="tel" placeholder="Enter your phone" >
+    </div>
+    <hr>
+
+    <div class="level-div">
+      <span class="level-span">Level</span>
+      <br>
+      <input class="one" type="radio" value="one" id = "one" name="level" required>
+      <label for="one">ONE</label>
+      <br>
+      <input class="two" type="radio" value="two" id = "two" name="level" required>
+      <label for="two">TWO</label>
+      <br>
+      <input class="three" type="radio" value="three" id = "three" name="level" required>
+      <label for="three">THREE</label>
+      <br>
+      <input class="four" type="radio" value="four" id = "four" name="level" required>
+      <label for="four">FOUR</label>
+    </div>
+    <hr>
+
+
+    <div class="gpa-div">
+      <span class="gpa-span">GPA</span>
+      <br>
+      <input class="gpa" type="number" min ="0.0" max = "4.0" step = "0.1" value="0.0"  name="gpa" placeholder="0.0" required>
+    </div>
+    <hr>
+
+    <div class="status-div">
+      <span class="gender-span">STATUS</span>
+      <input class="active" type="radio" id="active" value="inactive" name="status" required>
+      <label for="active">ACTIVE</label>
+      <input class="active" type="radio"  id ="inactive" value="inactive" name="status" required>
+      <label for="inactive">INACTIVE</label>
+    </div>
+    <hr>
+
+    <div class="dep-div">
+      <span class="dep-span">DEPARTEMENT</span>
+      <br>
+      <input class="cs" type="radio" value="cs" id = "cs" name="dep" required>
+      <label for="cs">CS</label>
+      <br>
+      <input class="is" type="radio" value="is" id = "is" name="dep" required>
+      <label for="is">IS</label>
+      <br>
+      <input class="ds" type="radio" value="ds" id = "ds" name="dep" required>
+      <label for="ds">DS</label>
+      <br>
+      <input class="ai" type="radio" value="ai" id = "ai" name="dep" required>
+      <label for="ai">AI</label>
+    </div>
+    <hr>
+    <div class="save-button">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+  <script src="js/nav.js"></script>
+  <script src="js/add.js"></script>
+</body>
+</html>
