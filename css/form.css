@@ -10,12 +10,10 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    position: absolute;
-    left: 35%;
-    top: 20%; 
     padding: 10px;
     align-content: center;
     overflow: hidden;
+    border: 2px solid var(--color-lighter);
 }
 
 label {
@@ -23,16 +21,13 @@ label {
 }
 
 .submit {
-    position: absolute;
-    left: 37%;
+    
     width: 100px;
     height: 30px;
     border-radius: 5px;
 }
 
-.input {
-    position: absolute;
-    left: 35%;
+input {
     border-radius: 5px;
 }
 
