@@ -4,12 +4,16 @@
 
 h1{
     text-align: center;
-    color: var(--color-lighter);
-    background-color: var(--background-color-lighter);
+    color: var(--background-color-darker);
 }
 
 span {
     position: absolute;
-    left: 33%;
+    left: 45%;
     color: var(--color-lighter);
+}
+
+.submit {
+    position: absolute;
+    left: 45%;
 }
