@@ -1,8 +1,10 @@
+const id = document.getElementById("id");
 const user_name = document.getElementById("name");
 const email = document.getElementById("email");
-const form = document.getElementById("form");
 const phone = document.getElementById("phone");
-const id = document.getElementById("id");
+const dob = document.getElementById("dob");
+const gpa = document.getElementById("gpa");
+const form = document.getElementById("form");
 
 function valid_name(user_name) {
   const pattern = /^[A-Za-z]+$/g;
@@ -40,7 +42,15 @@ form.addEventListener("submit", (e) => {
     confirm("phone must be a valid one having 11 digit starting with 01");
   } else {
     if (confirm("are you sure you want to submit?")) {
-      confirm("submited completed");
+      console.log(".");
+      const formData = new FormData(form);
+      let stud = new Stud(formData.get("id"), formData.get("name"),
+          formData.get("email"), formData.get("phone"), formData.get("dob"),
+          formData.get("gender"), formData.get("gpa"), formData.get("level"),
+          formData.get("dept"), formData.get("status"));
+      let ls = new LSManager();
+      ls.set(stud.id, stud);
+      alert("Submission completed");
       form.submit();
     } else {
       e.preventDefault();
