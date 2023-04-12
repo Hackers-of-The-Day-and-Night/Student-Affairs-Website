@@ -17,3 +17,7 @@ span {
     position: absolute;
     left: 45%;
 }
+
+.no-assign {
+    display: none;
+}
