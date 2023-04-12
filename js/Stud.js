@@ -7,9 +7,9 @@ class Stud {
   gender;
   gpa;
   level;
-  department;
+  dept;
   status;
-  constructor(id, name, email, phone, dob, gender, gpa, level, department, status) {
+  constructor(id, name, email, phone, dob, gender, gpa, level, dept, status) {
     this.id = id;
     this.name = name;
     this.email = email;
@@ -18,7 +18,7 @@ class Stud {
     this.gender = gender;
     this.gpa = gpa;
     this.level = level;
-    this.department = department;
+    this.dept = dept;
     this.status = status;
   }
 }
