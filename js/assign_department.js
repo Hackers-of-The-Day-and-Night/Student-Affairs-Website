@@ -16,13 +16,14 @@ if (stud.level < 3) {
 
 let sub = document.getElementById('submit');
 sub.addEventListener('click', function (e) {
-  if (stud.level === 3) {
+  if (stud.level == 3) {
     stud.dept = depDisplayer.value;
     lsm.set(id, stud);
+    alert("Department changed successfully");
   } else {
     alert("You are not allowed to change your department");
-    e.preventDefault();
   }
+  e.preventDefault();
 });
 
 // Log the id to the console

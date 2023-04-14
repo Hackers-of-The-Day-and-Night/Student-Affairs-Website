@@ -9,36 +9,18 @@
       border: 1px solid #CCC;
     }
   </style>
+  <script src="js/Stud.js"></script>
+  <script src="js/LSManager.js"></script>
 </head>
 <body>
   <nav></nav>
   <h1>Search for Active</h1>
   <lable>Search</lable>
-  <input type="search" placeholder="active student">
-  <hr>
+  <input type="search" id="search" placeholder="active student">
   <div>
-    <table border="1" width="200">
-      <tr>
-        <td><b>Name<b></td>
-      </tr>
-      <tr>
-        <td><a href="assign_department.html?pid=3&stud_id=20210058" target="_blank">Abd Elghafour nasser</a></td>
-      </tr>
-      <tr>
-        <td><a href="assign_department.html?pid=3&stud_id=20210058" target="_blank">Ahmed mohamed shaaban</a></td>
-      </tr>
-      <tr>
-        <td><a href="assign_department.html?pid=3&stud_id=20210058" target="_blank">Mostafa Ali Abd Elkawy</a></td>
-      </tr>
-      <tr>
-        <td><a href="assign_department.html?pid=3&stud_id=20210058"  target="_blank">Mahoud</a></td>
-      </tr>
-        <td><a href="assign_department.html?pid=3&stud_id=20210058"  target="_blank">Ahmed Hesham</a></td>
-      <tr>
-        <td><a href="assign_department.html?pid=3&stud_id=20210058"  target="_blank">Osama Mamdouh shawky</a></td>
-      </tr>
-    </table>
+    <table id="table"></table>
   </div>
   <script src="js/nav.js"></script>
+  <script src="js/search_active.js"></script>
 </body>
 </html>

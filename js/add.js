@@ -42,7 +42,6 @@ form.addEventListener("submit", (e) => {
     confirm("phone must be a valid one having 11 digit starting with 01");
   } else {
     if (confirm("are you sure you want to submit?")) {
-      console.log(".");
       const formData = new FormData(form);
       let stud = new Stud(formData.get("id"), formData.get("name"),
           formData.get("email"), formData.get("phone"), formData.get("dob"),
