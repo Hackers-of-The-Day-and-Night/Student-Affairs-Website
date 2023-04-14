@@ -5,14 +5,16 @@
   <meta name="description" content="This Is Assigning Department Page In Student Affairs Website">
   <title>Assign Department Page</title>
   <link rel="stylesheet" href="css/assign_department.css">
+  <script src="js/Stud.js"></script>
+  <script src="js/LSManager.js"></script>
 </head>
 <body>
   <nav></nav>
   <h1>Assign Department</h1>
-  <form method="post">
+  <form method="get" action="/search_active.html?pid=3">
     <div>
       <label for="department-id">Student ID : </label>
-      <span>20211122</span>
+      <span id="id-displayer"></span>
     </div>
     <div class="dep-type">
       <label for="department-kind">Choose Department : </label>
@@ -26,7 +28,7 @@
         </select>
     </div>
     <div>
-      <input type="submit" value="Save" class="submit">
+      <input type="submit" id="submit" value="Save" class="submit">
     </div>
     <!--* As POP Message *-->
     <div hidden>Are You Sure To Choose This Department ?</div>
