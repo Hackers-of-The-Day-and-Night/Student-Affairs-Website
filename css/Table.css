@@ -1,19 +1,31 @@
 @import url(general.css);
-@import url(nav.css);
-thead{
-    font-size: large;
-    font-weight: bold;
+
+.table {
+  border: 1px solid var(--background-color-darker);
+  margin: auto;
+  text-align: center;
+  border-spacing: 0;
 }
 
-td.edit {
-    text-align : center;
-  
-  }
-td.radio_buton{
-    text-align : left;
-  }
-  table {
-    border: 1px solid black;
-    width: 1000px;
-    background-color: white;
-  }
+.table thead {
+  background-color: var(--background-color-lighter);
+  color: var(--color-lighter);
+  margin: 0;
+}
+
+.table tr {
+  height: 35px;
+  margin: 0;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: var(--color-darker);
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: var(--color-lighter);
+}
+
+.table td {
+  padding: 10px 20px;
+}

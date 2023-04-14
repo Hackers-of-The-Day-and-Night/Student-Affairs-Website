@@ -3,36 +3,35 @@
 
 
 form {
-    width: 500px;
-    height: 200px;
-    background-color: var(--background-color-lighter);
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 10px;
-    align-content: center;
-    overflow: hidden;
-    border: 2px solid var(--color-lighter);
+  width: 500px;
+  height: 200px;
+  background-color: var(--background-color-lighter);
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+  align-content: center;
+  overflow: hidden;
+  border: 2px solid var(--color-lighter);
 }
 
 label {
-    color: var(--color-lighter);
+  color: var(--color-lighter);
 }
 
 .submit {
-    
-    width: 100px;
-    height: 30px;
-    border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
 }
 
 input {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 select {
-    width: 200px;
-    height: 30px;
-    border-radius: 10px;
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
 }

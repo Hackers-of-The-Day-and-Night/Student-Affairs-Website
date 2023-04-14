@@ -44,3 +44,7 @@ nav ul li a {
   justify-content: center;
   align-items: center;
 }
+
+nav ul li a:focus {
+  border: 2px solid var(--color-darker);
+}
