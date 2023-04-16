@@ -1,5 +1,4 @@
 @import url(general.css);
-@import url(nav.css);
 
 .table {
   border: 1px solid var(--background-color-darker);
@@ -11,12 +10,10 @@
 .table thead {
   background-color: var(--background-color-lighter);
   color: var(--color-lighter);
-  margin: 0;
 }
 
 .table tr {
   height: 35px;
-  margin: 0;
 }
 
 .table tbody tr:nth-child(odd) {
@@ -27,6 +24,7 @@
   background-color: var(--color-lighter);
 }
 
-.table td {
+.table td,
+.table th {
   padding: 10px 20px;
 }

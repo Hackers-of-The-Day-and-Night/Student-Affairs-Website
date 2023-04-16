@@ -14,3 +14,15 @@ body {
   margin: 0;
   padding: 0;
 }
+
+h1 {
+  color: var(--background-color-lighter);
+  text-align: center;
+  margin: 50px 0 60px;
+}
+
+h2 {
+  color: var(--background-color-lighter);
+  text-align: center;
+  margin: 20px 0 30px;
+}

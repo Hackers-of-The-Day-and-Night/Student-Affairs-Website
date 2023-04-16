@@ -30,6 +30,32 @@ class LSManager {
     return res;
   }
 
+  IsIdExist(value) {
+    return this.get(value) != null;
+  }
+
+  IsEmailExist(value) {
+    let arr = this.getAll();
+    for (let i = 0; i < arr.length; ++i) {
+      let stud = arr[i];
+      if (stud.email == value) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  IsPhoneExist(value) {
+    let arr = this.getAll();
+    for (let i = 0; i < arr.length; ++i) {
+      let stud = arr[i];
+      if (stud.phone == value) {
+        return true;
+      }
+    }
+    return false;
+  }
+
   getAll() {
     let arr = [];
     for (let i = 0; i < localStorage.length; i++) {
