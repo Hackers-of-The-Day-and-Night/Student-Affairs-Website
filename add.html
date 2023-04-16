@@ -10,106 +10,80 @@
 <body>
   <nav></nav>
   <h1>Add Page</h1>
-  <form id="form" action="./add.html">
-    <div class="name-div">
-      <label for="name">Name</label>
-      <input class="name" id="name" type="text" name="name" placeholder="Enter your name">
+  <form id="form" class="form">
+    <div class="header">
+      <h2>Required Information</h2>
     </div>
-    <!-- <hr> -->
-
-    <div class="id-div">
-      <label for="id">Id</label>
-      <input class="id" id="id" type="text" name="id" placeholder="xxxxxxxx">
-    </div>
-    <!-- <hr> -->
-
-    <div class="email-div">
-      <label for="email">Email</label>
-      <input class="email" type="email" name="email" placeholder="Enter your email" required>
-    </div>
-    <!-- <hr> -->
-    </div>
-    <!-- <hr> -->
-
-    <div class="date-of-birth-div">
-      <label for="date-of-birth">Date of Birth</label>
-      <input class="date-of-birth" type="Date" id="dob" name="dob" required>
-    </div>
-    <!-- <hr> -->
-
-    <div class="gender-div">
-      <span class="gender-span">Gender</span>
-      <input class="male" type="radio" id="male" value="male" name="gender" required checked>
-      <label for="male" class="gmale">Male</label>
-      <input class="female" type="radio" id="female" value="female" name="gender" required>
-      <label for="female" class="gfemale">Female</label>
-    </div>
-    <!-- <hr> -->
-
-    <div class="phone-div">
-      <label for="phone">phone</label>
-      <input class="phone" id="phone" type="tel" name="phone" placeholder="Enter your phone">
-    </div>
-    <!-- <hr> -->
-
-    <div class="level-div">
-      <span class="level-span">Level</span>
-      <br>
-      <input class="one" type="radio" value="1" id="one" name="level" required checked>
-      <label for="one" class="label-level">1</label>
-      <br>
-      <input class="two" type="radio" value="2" id="two" name="level" required>
-      <label for="two" class="label-level">2</label>
-      <br>
-      <input class="three" type="radio" value="3" id="three" name="level" required>
-      <label for="three" class="label-level">3</label>
-      <br>
-      <input class="four" type="radio" value="4" id="four" name="level" required>
-      <label for="four" class="label-level">4</label>
-    </div>
-    <!-- <hr> -->
-
-
-    <div class="gpa-div">
-      <span class="gpa-span">GPA</span>
-      <br>
-      <input class="gpa" id="gpa" type="number" min ="0.0" max = "4.0" step = "0.1" value="0.0"  name="gpa" placeholder="0.0" required>
-    </div>
-    <!-- <hr> -->
-
-    <div class="status-div">
-      <span class="gender-span">Status</span>
-      <input class="active" type="radio" id="active" value="active" name="status" required checked>
-      <label for="active" class="label-active">ACTIVE</label>
-      <input class="active" type="radio"  id="inactive" value="inactive" name="status" required>
-      <label for="inactive" class="label-inactive">INACTIVE</label>
-    </div>
-    <!-- <hr> -->
-
-    <div class="dept-div">
-      <span class="dept-span">Department</span>
-      <br>
-      <input type="radio" value="General" id="general" name="dept" required checked>
-      <label for="general" class="label-dep">General</label>
-      <br>
-      <input type="radio" value="CS" id="cs" name="dept" required>
-      <label for="cs" class="label-dep">CS</label>
-      <br>
-      <input type="radio" value="IT" id="it" name="dept" required>
-      <label for="it" class="label-dep">IT</label>
-      <br>
-      <input type="radio" value="IS" id="is" name="dept" required>
-      <label for="is" class="label-dep">IS</label>
-      <br>
-      <input type="radio" value="DS" id="ds" name="dept" required>
-      <label for="ds" class="label-dep">DS</label>
-      <br>
-      <input type="radio" value="AI" id="ai" name="dept" required>
-      <label for="ai" class="label-dep">AI</label>
-    </div>
-    <!-- <hr> -->
-    <div class="save-button">
-      <input type="submit" value="Submit" class="submit">
+    <div class="body">
+      <div class="input-div">
+        <label for="name" class="label">Name</label>
+        <input type="text" name="name" id="name" class="input-typed" placeholder="Enter your name">
+      </div>
+      <div class="input-div">
+        <label for="id" class="label">Id</label>
+        <input type="text" name="id" id="id" class="input-typed" placeholder="xxxxxxxx">
+      </div>
+      <div class="input-div">
+        <label for="email" class="label">Email</label>
+        <input type="email" name="email" id="email" class="input-typed" placeholder="Enter your email" required>
+      </div>
+      <div class="input-div">
+        <label for="phone" class="label">Phone</label>
+        <input type="tel" name="phone" id="phone" class="input-typed" placeholder="Enter your phone">
+      </div>
+      <div class="input-div">
+        <label for="dob" class="label">Date of Birth</label>
+        <input type="date" name="dob" class="input-choiced" required>
+      </div>
+      <div class="input-div">
+        <label for="level" class="label">Level</label>
+        <select name="level" class="input-choiced" required>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+      <div class="input-div">
+        <label for="dept" class="label">Department</label>
+        <select name="dept" class="input-choiced" required>
+          <option value="General">General</option>
+          <option value="CS">CS</option>
+          <option value="IT">IT</option>
+          <option value="IS">IS</option>
+          <option value="DS">DS</option>
+          <option value="AI">AI</option>
+        </select>
+      </div>
+      <div class="input-div">
+        <label for="gpa" class="label">GPA</label>
+        <input type="number" min="0.0" max="4.0" step="0.1" value="0.0" name="gpa" class="input-choiced" required>
+      </div>
+      <div class="radio-div">
+        <label class="label">Gender</label>
+        <div class="option">
+          <input type="radio" name="gender" id="male" class="male" value="male" required checked>
+          <label for="male">Male</label>
+        </div>
+        <div class="option">
+          <input type="radio" name="gender" id="female" class="female" value="female" required>
+          <label for="female">Female</label>
+        </div>
+      </div>
+      <div class="radio-div">
+        <label class="label">Status</label>
+        <div class="option">
+          <input type="radio" name="status" id="active" class="active" value="active" required checked>
+          <label for="active">Active</label>
+        </div>
+        <div class="option">
+          <input type="radio" name="status" id="inactive" class="active" value="inactive" required>
+          <label for="inactive">Inactive</label>
+        </div>
+      </div>
+      <div class="btn-div">
+        <input type="submit" class="btn" value="Submit">
+      </div>
     </div>
   </form>
   <script src="js/nav.js"></script>

@@ -11,24 +11,32 @@
 <body>
   <nav></nav>
   <h1>Assign Department</h1>
-  <form method="get" action="/search_active.html?pid=3">
-    <div>
-      <label for="department-id">Student ID : </label>
-      <span id="id-displayer"></span>
+  <form class="form">
+    <div class="header">
+      <h2>Available Departments</h2>
     </div>
-    <div class="dep-type">
-      <label for="department-kind">Choose Department : </label>
-      <select id="departments" autofocus>
-        <option value="General" selected>General</option>
-        <option value="IS" id="is">IS</option>
-        <option value="CS" id="cs">CS</option>
-        <option value="IT" id="it">IT</option>
-        <option value="DS" id="ds">DS</option>
-        <option value="AI" id="ai">AI</option>
+    <div class="body">
+      <div class="input-div">
+        <label for="id-displayer" class="label">Student ID</label>
+        <input type="text" id="id-displayer" class="input-typed input-disabled" disabled>
+      </div>
+      <div class="input-div">
+        <label for="name-displayer" class="label">Student Name</label>
+        <input type="text" id="name-displayer" class="input-typed input-disabled" disabled>
+      <div class="input-div">
+        <label for="dept" class="label">Department</label>
+        <select name="dept" id="dept-selector" class="input-choiced" required>
+          <option value="General">General</option>
+          <option value="CS">CS</option>
+          <option value="IT">IT</option>
+          <option value="IS">IS</option>
+          <option value="DS">DS</option>
+          <option value="AI">AI</option>
         </select>
-    </div>
-    <div>
-      <input type="submit" id="submit" value="Save" class="submit">
+      </div>
+      <div class="btn-div">
+        <input type="submit" id="submit" class="btn" value="Save">
+      </div>
     </div>
   </form>
   <script src="js/nav.js"></script>

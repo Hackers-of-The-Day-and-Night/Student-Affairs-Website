@@ -1,25 +1,4 @@
 @import url(general.css);
 @import url(nav.css);
 @import url(table.css);
-/* @import url(form.css); */
-
-h1 {
-  color: var(--background-color-lighter);
-  text-align: center;
-}
-
-.search {
-  display: block;
-  width: 50%;
-  margin: 50px auto;
-  background-color: var(--color-lighter);
-  height: 40px;
-  padding: 5px 20px;
-  border-radius: 20px;
-  font-size: 1.2rem;
-  border: 2px solid var(--background-color-darker);
-}
-
-.search:focus {
-  outline: 2px solid var(--background-color-darker);
-}
+@import url(form.css);

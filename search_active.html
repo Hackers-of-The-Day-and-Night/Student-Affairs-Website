@@ -4,22 +4,23 @@
   <meta charset="utf-8">
   <title>Search for Active</title>
   <link rel="stylesheet" href="css/search_active.css">
-  <!-- <style>
-    td {
-      border: 1px solid #CCC;
-    }
-  </style> -->
   <script src="js/Stud.js"></script>
   <script src="js/LSManager.js"></script>
 </head>
 <body>
   <nav></nav>
   <h1>Search for Active</h1>
-  <!-- <lable>Search</lable> -->
-  <input type="search" id="search" placeholder="Search For Active Student">
-  <div>
-    <table class="table" id="table"></table>
-  </div>
+  <input type="search" class="search" id="search" placeholder="Search for active students">
+  <table class="table" id="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Assign Department</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
   <script src="js/nav.js"></script>
   <script src="js/search_active.js"></script>
 </body>
