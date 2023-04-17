@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <title>Edit user data</title>
   <link rel="stylesheet" href="css/edit.css">
+  <script src="js/Stud.js"></script>
+  <script src="js/LSManager.js"></script>
+  <script src="js/Validations.js"></script>
 </head>
 <body>
   <nav></nav>
@@ -13,14 +16,13 @@
       <h2>Student Information</h2>
     </div>
     <div class="body">
-
-      <div class="input-div">
-        <label for="name" class="label">Name</label>
-        <input type="text" name="name" id="name" class="input-typed" placeholder="Enter your name">
-      </div>
       <div class="input-div">
         <label for="id" class="label">Id</label>
         <input type="text" name="id" id="id" class="input-typed" placeholder="xxxxxxxx">
+      </div>
+      <div class="input-div">
+        <label for="name" class="label">Name</label>
+        <input type="text" name="name" id="name" class="input-typed" placeholder="Enter your name">
       </div>
       <div class="input-div">
         <label for="email" class="label">Email</label>
@@ -32,12 +34,12 @@
       </div>
       <div class="input-div">
         <label for="dob" class="label">Date of Birth</label>
-        <input type="date" name="dob" class="input-choiced" required>
+        <input type="date" name="dob" id="dob" class="input-choiced" required>
       </div>
       <div class="input-div">
         <label for="level" class="label">Level</label>
-        <select name="level" class="input-choiced" required>
-          <option value="1">1</option>
+        <select name="level" id="level" class="input-choiced" required>
+          <option value="1" selected>1</option>
           <option value="2">2</option>
           <option value="3">3</option>
           <option value="4">4</option>
@@ -45,8 +47,8 @@
       </div>
       <div class="input-div">
         <label for="dept" class="label">Department</label>
-        <select name="dept" class="input-choiced input-disabled" disabled>
-          <option value="General">General</option>
+        <select name="dept" id="dept" class="input-choiced input-disabled" disabled>
+          <option value="General" selected>General</option>
           <option value="CS">CS</option>
           <option value="IT">IT</option>
           <option value="IS">IS</option>
@@ -56,33 +58,33 @@
       </div>
       <div class="input-div">
         <label for="gpa" class="label">GPA</label>
-        <input type="number" min="0.0" max="4.0" step="0.1" value="0.0" name="gpa" class="input-choiced" required>
+        <input type="number" name="gpa" id="gpa" class="input-choiced" min="0.0" max="4.0" step="0.1" value="0.0" required>
       </div>
       <div class="radio-div">
         <label class="label">Gender</label>
         <div class="option">
-          <input type="radio" name="gender" id="male" class="male" value="male" required checked>
+          <input type="radio" name="gender" id="male" class="gender" value="male" required checked>
           <label for="male">Male</label>
         </div>
         <div class="option">
-          <input type="radio" name="gender" id="female" class="female" value="female" required>
+          <input type="radio" name="gender" id="female" class="gender" value="female" required>
           <label for="female">Female</label>
         </div>
       </div>
       <div class="radio-div">
         <label class="label">Status</label>
         <div class="option">
-          <input type="radio" name="status" id="active" class="active" value="active" required checked>
+          <input type="radio" name="status" id="active" class="status" value="active" required checked>
           <label for="active">Active</label>
         </div>
         <div class="option">
-          <input type="radio" name="status" id="inactive" class="active" value="inactive" required>
+          <input type="radio" name="status" id="inactive" class="status" value="inactive" required>
           <label for="inactive">Inactive</label>
         </div>
       </div>
       <div class="btn-div">
-        <input type="submit" class="btn" value="Submit">
-        <button class="btn">Delete</button>
+        <input type="submit" id="submit" class="btn" value="Submit">
+        <button id="delete" class="btn">Delete</button>
       </div>
     </div>
   </form>

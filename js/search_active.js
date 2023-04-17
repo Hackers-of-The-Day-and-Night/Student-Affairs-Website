@@ -3,7 +3,7 @@ function showData(arr) {
   tbody.innerHTML = "";
   for (let i = 0; i < arr.length; ++i) {
     let stud = arr[i];
-    if (stud.status === "active") {
+    if (stud.status == "active") {
       tbody.innerHTML += `
         <tr>
           <td>${stud.id}</td>
