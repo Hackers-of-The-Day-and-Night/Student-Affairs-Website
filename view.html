@@ -4,16 +4,14 @@
   <meta charset="utf-8">
   <title>view</title>
   <link rel="stylesheet" href="css/view.css">
-  <style>
-  </style>
+  <script src="js/Stud.js"></script>
+  <script src="js/LSManager.js"></script>
 </head>
 <body>
   <nav></nav>
   <h1>View Page</h1>
-  <form action="">
-    <input type="search" class="search" placeholder="Search for a student name">
-  </form>
-  <table class="table">
+  <input type="search" id="search" class="search" placeholder="Search for students names">
+  <table id="table" class="table">
     <thead>
       <tr>
         <th>ID</th>
@@ -24,75 +22,9 @@
         <th>Status</th>
       </tr>
     </thead>
-    <tbody>
-      <tr>
-        <td>20210213</td>
-        <td>Abd Elghafour nasser</td>
-        <td>opad@gmail.com</td>
-        <td>1010101010</td>
-        <td  class ="edit" ><a href="edit.html?pid=2" target="_blank">Edit/Delete</a></td>
-        <td class="status">
-          <label>Active<input type="radio" name="R1"></label>
-          <label>inActive<input type="radio" name="R1"></label>
-        </td>
-      </tr>
-      <tr>
-        <td>20210032</td>
-        <td>Ahmed mohamed shaaban</td>
-        <td>Ahmed@gmail.com</td>
-        <td>2020202020</td>
-        <td class="edit"><a href="edit.html?pid=2" target="_blank">Edit/Delete</a></td>
-        <td class="status">
-          <label>Active<input type="radio" name="R2"></label>
-          <label>inActive<input type="radio" name="R2"></label>
-        </td>
-      </tr>
-      <tr>
-        <td>20210393</td>
-        <td>Mostafa Ali Abd Elkawy</td>
-        <td>Mostafa@gmail.com</td>
-        <td>3030303030</td>
-        <td class="edit"><a href="edit.html?pid=2" target="_blank">Edit/Delete</a></td>
-        <td class="status">
-          <label>Active<input type="radio" name="R3"></label>
-          <label>inActive<input type="radio" name="R3"></label>
-        </td>
-      </tr>
-      <tr>
-        <td>20210233</td>
-        <td>Mahoud</td>
-        <td>houda@gmail.com</td>
-        <td>4040404040</td>
-        <td class="edit"><a href="edit.html?pid=2" target="_blank">Edit/Delete</a></td>
-        <td class="status">
-          <label>Active<input type="radio" name="R4"></label>
-          <label>inActive<input type="radio" name="R4"></label>
-        </td>
-      </tr>
-      <tr>
-        <td>20211080</td>
-        <td>Ahmed Hesham</td>
-        <td>Ahmed_he@gmail.com</td>
-        <td>5050505050</td>
-        <td class="edit"><a href="edit.html?pid=2" target="_blank">Edit/Delete</a></td>
-        <td class="status">
-          <label>Active<input type="radio" name="R5"></label>
-          <label>inActive<input type="radio" name="R5"></label>
-        </td>
-      </tr>
-      <tr>
-        <td>20210065</td>
-        <td>Osama Mamdouh shawky</td>
-        <td>osos@gmail.com</td>
-        <td>6060606060</td>
-        <td class="edit"><a href="edit.html?pid=2" target="_blank">Edit/Delete</a></td>
-        <td class="status">
-          <label>Active<input type="radio" name="R6"></label>
-          <label>Inactive<input type="radio" name="R6"></label>
-        </td>
-    </tr>
-    </tbody>
+    <tbody></tbody>
   </table>
   <script src="js/nav.js"></script>
+  <script src="js/view.js"></script>
 </body>
 </html>

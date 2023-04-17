@@ -9,7 +9,7 @@ idDisplayer.value = id;
 let deptSelector = document.getElementById('dept-selector');
 deptSelector.value = stud.dept;
 
-if (stud.level < 3) {
+if (stud.level != 3) {
   deptSelector.disabled = true;
   deptSelector.classList.add("input-disabled");
 }

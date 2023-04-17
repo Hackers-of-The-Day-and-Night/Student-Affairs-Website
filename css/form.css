@@ -6,7 +6,6 @@
   margin: 50px auto;
   border-radius: 5px;
   border: 2px solid var(--background-color-lighter);
-  /* box-shadow: 0 0 5px 0px var(--background-color-darker); */
 }
 
 .form .header {
