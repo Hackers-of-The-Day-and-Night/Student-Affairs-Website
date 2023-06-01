@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Add Student</title>
+  <link rel="stylesheet" href="{% static 'manage_studs/css/add.css' %}">
+  <script src="{% static 'manage_studs/js/Validation.js' %}"></script>
+</head>
+<body>
+  {% include 'manage_studs/nav.html' with pid=2 %}
+  <h1>Add Student</h1>
+  <form name="add_form" id="add_form" class="form" method="POST" action="." autocomplete="off">
+    {% csrf_token %}
+    <div class="header">
+      <h2>Student Information</h2>
+    </div>
+    <div class="body">
+      <p id="error" class="error">{{ error_msg }}</p>
+      <div class="input-div">
+        <label for="id" class="label">Id</label>
+        <input type="text" name="id" id="id" class="input-typed" value="{{ stud.id }}" placeholder="xxxxxxxx" required>
+      </div>
+      <div class="input-div">
+        <label for="name" class="label">Name</label>
+        <input type="text" name="name" id="name" class="input-typed" value="{{ stud.name }}" placeholder="Enter your name" required>
+      </div>
+      <div class="input-div">
+        <label for="email" class="label">Email</label>
+        <input type="email" name="email" id="email" class="input-typed" value="{{ stud.email }}" placeholder="Enter your email" required>
+      </div>
+      <div class="input-div">
+        <label for="phone" class="label">Phone</label>
+        <input type="tel" name="phone" id="phone" class="input-typed" value="{{ stud.phone }}" placeholder="Enter your phone" required>
+      </div>
+      <div class="input-div">
+        <label for="dob" class="label">Date of Birth</label>
+        <input type="date" name="dob" id="dob" class="input-choiced" value="{{ stud.dob }}" required>
+      </div>
+      <div class="input-div">
+        <label for="level" class="label">Level</label>
+        <select name="level" id="level" class="input-choiced" required>
+          <option value="1" {% if stud.level == 1 %} selected {% endif %}>1</option>
+          <option value="2" {% if stud.level == 2 %} selected {% endif %}>2</option>
+          <option value="3" {% if stud.level == 3 %} selected {% endif %}>3</option>
+          <option value="4" {% if stud.level == 4 %} selected {% endif %}>4</option>
+        </select>
+      </div>
+      <div class="input-div">
+        <label for="dept" class="label">Department</label>
+        <select name="dept" id="dept" class="input-choiced">
+          <option value="General" {% if stud.dept == 'general' %} selected {% endif %}>General</option>
+          <option value="CS" {% if stud.dept == 'cs' %} selected {% endif %}>CS</option>
+          <option value="IT" {% if stud.dept == 'it' %} selected {% endif %}>IT</option>
+          <option value="IS" {% if stud.dept == 'is' %} selected {% endif %}>IS</option>
+          <option value="DS" {% if stud.dept == 'ds' %} selected {% endif %}>DS</option>
+          <option value="AI" {% if stud.dept == 'ai' %} selected {% endif %}>AI</option>
+        </select>
+      </div>
+      <div class="input-div">
+        <label for="gpa" class="label">GPA</label>
+        <input type="number" name="gpa" id="gpa" class="input-choiced" min="0.0" max="4.0" step="0.1" value="{{ stud.gpa }}" placeholder="0.0" required>
+      </div>
+      <div class="radio-div">
+        <label class="label">Gender</label>
+        <div class="option">
+          <input type="radio" name="gender" id="male" class="gender" value="male" required {% if stud.gender == 'male' %} checked {% endif %}>
+          <label for="male">Male</label>
+        </div>
+        <div class="option">
+          <input type="radio" name="gender" id="female" class="gender" value="female" required  {% if stud.gender == 'female' %} checked {% endif %}>
+          <label for="female">Female</label>
+        </div>
+      </div>
+      <div class="radio-div">
+        <label class="label">Status</label>
+        <div class="option">
+          <input type="radio" name="status" id="active" class="status" value="active" required {% if stud.status == 'active' %} checked {% endif %}>
+          <label for="active">Active</label>
+        </div>
+        <div class="option">
+          <input type="radio" name="status" id="inactive" class="status" value="inactive" required {% if stud.status == 'inactive' %} checked {% endif %}>
+          <label for="inactive">Inactive</label>
+        </div>
+      </div>
+      <div class="btn-div">
+        <input type="submit" id="submit" class="btn" value="Submit">
+      </div>
+    </div>
+  </form>
+  <script src="{% static 'manage_studs/js/add.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>view</title>
+  <link rel="stylesheet" href="{% static 'manage_studs/css/view.css' %}">
+</head>
+<body>
+  {% include 'manage_studs/nav.html' with pid=3 %}
+  <h1>View Page</h1>
+  <form name="view_form" id="view_form" action="." method="GET">
+    <input type="search" name="search" id="search" class="search" placeholder="Search for students names">
+  </form>
+  <table id="table" class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>E-mail</th>
+        <th>Phone</th>
+        <th>Edit Link</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% csrf_token %}
+      {% for stud in list_studs %}
+        <tr>
+          <td>{{ stud.id }}</td>
+          <td>{{ stud.name }}</td>
+          <td>{{ stud.email }}</td>
+          <td>{{ stud.phone }}</td>
+          <td><a href="/{{ stud.id }}/edit/">Edit/Delete</a></td>
+          <td>
+            <form name="form{{ stud.id }}" id="status_form{{ stud.id }}" action="." method="POST" data-id="{{ stud.id }}" autocomplete="off">
+              <div class="radio-div">
+                <div class="option">
+                  <input type="radio" name="status" id="active{{ stud.id }}" value="active" {% if stud.status == 'active' %} checked {% endif %}>
+                  <label for="active{{ stud.id }}">Active</label>
+                </div>
+                <div class="option">
+                  <input type="radio" name="status" id="inactive{{ stud.id }}" value="inactive" {% if stud.status == 'inactive' %} checked {% endif %}>
+                  <label for="inactive{{ stud.id }}">Inactive</label>
+                </div>
+              </div>
+            </form>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <script src="{% static 'manage_studs/js/view.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<nav>
+  <ul>
+    <li {% if pid == 1 %} class="active" {% endif %}><a href="{% url 'manage_studs:index' %}">Home</a></li>
+    <li {% if pid == 2 %} class="active" {% endif %}><a href="{% url 'manage_studs:add_stud' %}">Add New</a></li>
+    <li {% if pid == 3 %} class="active" {% endif %}><a href="{% url 'manage_studs:view_studs' %}">View/Edit</a></li>
+    <li {% if pid == 4 %} class="active" {% endif %}><a href="{% url 'manage_studs:search_active' %}">Assign Department</a></li>
+  </ul>
+</nav>
