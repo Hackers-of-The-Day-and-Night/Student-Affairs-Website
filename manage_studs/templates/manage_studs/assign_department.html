@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="This Is Assigning Department Page In Student Affairs Website">
+  <title>Assign Department</title>
+  <link rel="stylesheet" href="{% static 'manage_studs/css/assign_department.css' %}">
+</head>
+<body>
+  {% include 'manage_studs/nav.html' with pid=4 %}
+  <h1>Assign Department</h1>
+  <form name="assign_department_form" id="assign_department_form" class="form" action="." method="POST" autocomplete="off">
+    {% csrf_token %}
+    <div class="header">
+      <h2>Available Departments</h2>
+    </div>
+    <div class="body">
+      <div class="input-div">
+        <label for="id-displayer" class="label">Student ID</label>
+        <input type="text" id="id-displayer" class="input-typed input-disabled" value="{{ stud.id }}" disabled>
+      </div>
+      <div class="input-div">
+        <label for="name-displayer" class="label">Student Name</label>
+        <input type="text" id="name-displayer" class="input-typed input-disabled" value="{{ stud.name }}" disabled>
+      <div class="input-div">
+        <label for="dept" class="label">Department</label>
+        <select name="dept" id="dept-selector" {% if stud.level != 3 %} class="input-choiced input-disabled" disabled {% else %} class="input-choiced" {% endif %}>
+          <option value="General" {% if stud.dept == 'general' %} selected {% endif %}>General</option>
+          <option value="CS" {% if stud.dept == 'cs' %} selected {% endif %}>CS</option>
+          <option value="IT" {% if stud.dept == 'it' %} selected {% endif %}>IT</option>
+          <option value="IS" {% if stud.dept == 'is' %} selected {% endif %}>IS</option>
+          <option value="DS" {% if stud.dept == 'ds' %} selected {% endif %}>DS</option>
+          <option value="AI" {% if stud.dept == 'ai' %} selected {% endif %}>AI</option>
+        </select>
+      </div>
+      <div class="btn-div">
+        <input type="submit" id="submit" class="btn" value="Save" {% if stud.level != 3 %} data-active="true" {% else %} data-active="false" {% endif %}>
+      </div>
+    </div>
+  </form>
+  <script src="{% static 'manage_studs/js/ajax.js' %}"></script>
+  <script src="{% static 'manage_studs/js/assign_department.js' %}"></script>
+</body>
+</html>

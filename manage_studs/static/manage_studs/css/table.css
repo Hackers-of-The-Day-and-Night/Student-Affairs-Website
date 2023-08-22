@@ -1,0 +1,30 @@
+@import url(general.css);
+
+.table {
+  border: 1px solid var(--background-color-darker);
+  margin: 20px auto;
+  text-align: center;
+  border-spacing: 0;
+}
+
+.table thead {
+  background-color: var(--background-color-lighter);
+  color: var(--color-lighter);
+}
+
+.table tr {
+  height: 35px;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: var(--color-darker);
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: var(--color-lighter);
+}
+
+.table td,
+.table th {
+  padding: 10px 20px;
+}

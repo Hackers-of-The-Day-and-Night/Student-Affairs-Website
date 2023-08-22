@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Search for Active</title>
+  <link rel="stylesheet" href="{% static 'manage_studs/css/search_active.css' %}">
+</head>
+<body>
+  {% include 'manage_studs/nav.html' with pid=4 %}
+  <h1>Search for Active</h1>
+  <form name="search_form" id="search_form" class="" action="." method="GET">
+    <input type="search" name="search" id="search" class="search" placeholder="Search for active students">
+  </form>
+  <table id="table" class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Assign Department</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for stud in list_studs %}
+        <tr>
+          <td>{{ stud.id }}</td>
+          <td>{{ stud.name }}</td>
+          <td><a href="{% url 'manage_studs:assign_department' stud.id %}">Assign Department</a></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <script type="text/javascript" src="{% static 'manage_studs/js/search_active.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="{% static 'manage_studs/css/home.css' %}">
+</head>
+<body>
+  <div class="projects">
+    <a href="#" class="name">Human Resources</a>
+    <a href="{% url 'manage_studs:view_studs' %}" class="name">Student Affairs</a>
+    <a href="#" class="name">Higher Studies</a>
+    <a href="#" class="name">Laboratory Tracking</a>
+  </div>
+</body>
+</html>
